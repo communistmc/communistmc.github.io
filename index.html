@@ -1,5 +1,82 @@
-<h1>☭ Communist MC ☭</h1>
-<p>The BEST Communist Eaglercraft Server!</p>
-<p>IP: wss://uwu111.psr.tf</p>
-<a href="https://discord.gg/rcsNeCcCTs">Discord Invite!!!1</a>
-<h2>Rules in the discord server!</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☭ Communist MC ☭</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #eee;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #e60000;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 0;
+            display: inline-block;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            margin-top: 10px;
+            cursor: pointer;
+            background-color: #444;
+            color: #eee;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .ip-container {
+            margin: 20px 0;
+        }
+        .ip-text {
+            display: inline-block;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>☭ Communist MC ☭</h1>
+    <p>The BEST Communist Eaglercraft Server!</p>
+
+    <div class="ip-container">
+        <span class="ip-text">IP: wss://uwu111.psr.tf</span>
+        <button onclick="copyIP()">Copy IP</button>
+    </div>
+
+    <a href="https://discord.gg/rcsNeCcCTs" target="_blank">Join our Discord Server!</a>
+
+    <h2>Rules in the Discord Server!</h2>
+
+    <script>
+        function copyIP() {
+            const ipText = 'wss://uwu111.psr.tf';
+            navigator.clipboard.writeText(ipText).then(function() {
+                alert('IP address copied to clipboard!');
+            }, function(err) {
+                alert('Failed to copy IP address.');
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
